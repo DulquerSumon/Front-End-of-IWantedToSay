@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
+import Footer from "../components/Footer";
 import { abi, contractAddresses } from "../constants";
 import { useMoralis, useWeb3Contract } from "react-moralis";
 import { ConnectButton, Button } from "web3uikit";
@@ -45,6 +46,7 @@ export default function Home() {
       </div>
 
       <span id="quote" className={styles.main}></span>
+      <Footer />
     </div>
   );
 }
